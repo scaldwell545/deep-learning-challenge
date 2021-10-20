@@ -1,0 +1,25 @@
+--- Overview ---
+
+The purpose of this analysis is to create an accurate algorithm to predict whether or not applicants for funding will be successful.
+We technologies we will be using are Tensorflow, Pandas, and SKLearn.
+
+--- Results ---
+
+- Variables used in the creation of the model include :
+    - Target Variable : IS_SUCCESSFUL
+    - Model Feature Variables :
+        - APPLICATION_TYPE
+        - AFFILIATION
+        - CLASSIFICATION
+        - USE_CASE
+        - ORGANIZATION
+        - STATUS
+        - INCOME_AMT
+        - SPECIAL_CONSIDERATIONS
+        - ASK_AMT
+    - Variables not used in model creation :
+        - EIN
+        - NAME
+
+Features of our final model
+    - Number of neurons : 

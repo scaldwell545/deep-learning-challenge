@@ -5,7 +5,7 @@ We technologies we will be using are Tensorflow, Pandas, and SKLearn.
 
 --- Results ---
 
-- Variables used in the creation of the model include :
+- Variables used in the creation of the model :
     - Target Variable : IS_SUCCESSFUL
     - Model Feature Variables :
         - APPLICATION_TYPE
@@ -21,5 +21,24 @@ We technologies we will be using are Tensorflow, Pandas, and SKLearn.
         - EIN
         - NAME
 
-Features of our final model
-    - Number of neurons : 
+- Features of our final model :
+    - Number of layers : 4
+        - First layer : Sigmoid Activation, 40 neurons
+        - Scond layer : Sigmoid Activation, 28 neurons
+        - Third layer : Sigmoid Activation, 28 neurons
+        - Output layer : Sigmoid Activation, 1 neuron
+    - Target Accuracy : 75%
+        - No, I was unable to reach the target accuracy. The final model I produced only managed to score 73.13% accuracy on the stanadardized test data.
+        Throughout the model development, it was able to reach about 74.15% accuracy which is marginally better but closer to the taget goal.
+    - The first steps I made to try to improve accuracy was changing the bin sizes for classifications and application types. I decresead the threshold 
+    to incorporate more values I thought might be more significant to model development.
+    - The next step I took was to change the number of hidden layers, which acitavtion functions they used, and how many nuerons they used
+    - The final step was to change the learning rate of the model. I believe that, since none of my models where about to surpass 74%, that there is a local 
+    saddle point somewhat near that mark. Unfortunately, I was unable to overcome this obstacle.
+
+
+
+--- Summary ---
+
+The final model I developed had a 73.13% accuracy when tested on the split and standardized sample data. While this number is somewhat close to the target accuracy of 75%, I was unable to reach this mark. A better way to approach this problem would be to automate the learning process in terms of how many neurons,
+how many layers, which acitvation functions you want to use, learning rate, and which variables you want to include in the final model (hyperparameter tuning).
